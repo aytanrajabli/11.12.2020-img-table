@@ -1,0 +1,67 @@
+body {
+  background: url(https://i.pinimg.com/originals/f4/51/99/f45199275498d7172fb435b317dacf74.jpg);
+}
+
+#DropArea {
+  padding: 40px;
+  -webkit-box-shadow: inset 0 0 20px 0 #888;
+          box-shadow: inset 0 0 20px 0 #888;
+  background-color: white;
+}
+
+#DropArea .drop-content {
+  padding: 40px;
+  border: 1px dashed brown;
+  text-align: center;
+}
+
+#DropArea .drop-content.active i {
+  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: icoAni 1s infinite;
+          animation: icoAni 1s infinite;
+}
+
+#DropArea .drop-content.active p {
+  pointer-events: none;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+#DropArea .drop-content p {
+  font-size: 1.2em;
+  font-weight: 700;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#DropArea .drop-content i {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+@-webkit-keyframes icoAni {
+  from {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  to {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+@keyframes icoAni {
+  from {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  to {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
